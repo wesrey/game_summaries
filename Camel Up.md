@@ -19,15 +19,15 @@ Camel in front is ahead; Camel on top is ahead.
 	- Cannot go in spot neighboring another desert tile
 	- Cannot go in spot containing a camel
 	- Be aware the tile has 2 different sides (+1 and -1 sides)
-2. OR Roll a Die from Pyramid
+2. Roll a Die from Pyramid
 	- Pick up a pyramid tile (guaranteed coin at end of leg scoring) and roll one die.
 	- That color camel moves its stack. On top if sharing a spot. Put the die on the colored tent on the board.
 	- If they land on a +1 "oasis" tile, pay tile owner, the camel stack goes forward and ON TOP.
-	- If they land on a -1 "mirage" tile, pay tile owner, the camel stack goes back and UNDER.
-3. OR Pick up a Leg Betting Tile
+	- If they land on a -1 "mirage" tile, pay tile owner, the camel stack goes backward and UNDER.
+3. Pick up a Leg Betting Tile
 	- Tiles are a bet for a camel to be first (5 coins) or second (1 coin).
 	- 3rd-5th place lose 1 coin.
-4. OR Put down a card in the Overall Last Place or Overall First Place piles
+4. Put down a card in the Overall Last Place or Overall First Place piles
 	- Put a camel card from their hand in either pile
 
 ### End of Racing Leg Scoring
