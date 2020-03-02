@@ -3,7 +3,8 @@
 Auction ends Immediately when 4th Green Card is flipped up for bid.
 Once auction is over: Winner has (a) Most points AND (b) NOT the poorest player.
 ### Tiebreaker
-Highest single Luxury Card value wins.
+Player with most money left wins.
+Then, Highest single Luxury Card value wins.
 
 ## Setup
 - Each player takes their set of 11 color-matched money cards as their hand
@@ -43,5 +44,6 @@ Highest single Luxury Card value wins.
 - Money cards spent by bidders are removed from the game.
 - Flip top card from Draw Deck and previous round Winner Starts Bidding
 
-### Game End?
-
+### Game End
+When the 4th Green-Bordered card is revealed from the Draw Deck, the game ends immediately.
+No bidding will take place for this 4th Green card.
