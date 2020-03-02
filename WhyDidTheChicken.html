@@ -14,23 +14,24 @@
 
 <body onload="card_gen()">
 
-  <span id="card-sentence">
+  <div id="card-sentence" style="font-size: xx-large; line-height: 500px; text-align: center;">
 
   <script>
   function card_gen() {
-    var num_questions = 20;
-    var num_nouns = 318;
+    // Pick out a question..
+    var rand_question = questions[Math.floor((Math.random() * questions.length))];
 
-    var rand_question = questions[Math.floor((Math.random() * num_questions))];
-
-    var rand_noun1 = nouns[Math.floor((Math.random() * num_nouns))];
+    // Pick out the two nouns...
+    var rand_noun1 = nouns[Math.floor((Math.random() * nouns.length))];
     do { // this loop ensures the 2 nouns are different
-      var rand_noun2 = nouns[Math.floor((Math.random() * num_nouns))];
+      var rand_noun2 = nouns[Math.floor((Math.random() * nouns.length))];
     } while (rand_noun1 == rand_noun2)
 
-    var question = rand_question.replace("_", rand_noun1);
-    question = question.replace("_", rand_noun2);
+    // Put the three choices all together...
+    var question = rand_question.replace("_", "<span style='text-decoration: underline;'>"+rand_noun1+"</span>");
+    question = question.replace("_", "<span style='text-decoration: underline;'>"+rand_noun2+"</span>");
 
+    // Put the overall sentence on the web document
     document.getElementById("card-sentence").innerHTML = question;
   }
 
@@ -81,7 +82,7 @@
     "an elephant",
     "a squid",
     "a ballerina",
-    "a drunk",
+    //"a drunk",
     "a rabbit",
     "a pirate",
     "a goldfish",
