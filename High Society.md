@@ -1,9 +1,9 @@
 # High Society
 ## How to Win
-Auction ends Immediately when 4th Green Card is flipped up for bid.
+Auction ends Immediately when 4th Green Card is flipped up for bid.  
 Once auction is over: Winner has (a) Most points AND (b) NOT the poorest player.
 ### Tiebreaker
-Player with most money left wins.
+Player with most money left wins.  
 Then, Highest single Luxury Card value wins.
 
 ## Setup
@@ -45,5 +45,5 @@ Then, Highest single Luxury Card value wins.
 - Flip top card from Draw Deck and previous round Winner Starts Bidding
 
 ### Game End
-When the 4th Green-Bordered card is revealed from the Draw Deck, the game ends immediately.
+When the 4th Green-Bordered card is revealed from the Draw Deck, the game ends immediately.  
 No bidding will take place for this 4th Green card.
