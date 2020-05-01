@@ -1,8 +1,8 @@
 # Ticket to Ride: First Journey
 ## How to Win
-- Complete 6 *Ticket Cards*
+- Complete 6 *Ticket Cards*   
 *or*
-- Have the Most completed Tickets, when any player has played all of their train cars
+- Have the Most completed Tickets, when any player has played all of their train cars   
 **No Tie Breaker**
 
 The game ends instantly once someone has either completed six tickets, or played all of their trains onto the board.
@@ -15,9 +15,9 @@ The game ends instantly once someone has either completed six tickets, or played
 - Youngest Player Starts
 
 ## Player Turn, choose one:
-- Play *Train Cards* to claim a route on the board
+- Play *Train Cards* to claim a route on the board   
 *or*
-- Draw two *Train Cards*
+- Draw two *Train Cards*   
 *or*
 - Discard **BOTH** *Ticket Cards* and draw 2 new ones (this is rare)
 
