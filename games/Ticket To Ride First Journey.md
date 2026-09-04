@@ -28,5 +28,3 @@ The game ends instantly once someone has either completed six tickets, or played
 * If you ever connect a direct route from one of the 3 east coast cities to one of the 3 west coast cities:
   * Score one of the "Coast to Coast" ticket cards. This behaves as your other scored *Ticket Cards*
   * It is fun to announce "Coast to Coast!" as you draw and score this
-
-#board games/rules summary#
