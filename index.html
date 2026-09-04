@@ -115,14 +115,7 @@
   <script src="scripts/marked.min.js"></script>
   <script src="scripts/purify.min.js"></script>
   <script>
-    const games = [
-      "games/Camel Up.md",
-      "games/Cockroach Poker.md",
-      "games/High Society.md",
-      "games/Skull.md",
-      "games/Ticket To Ride First Journey.md",
-      "games/Whitehall Mystery.md"
-    ];
+    let games = [];
     const list = document.querySelector("#game-list");
     const content = document.querySelector("#content");
     const status = document.querySelector("#status");
@@ -159,8 +152,22 @@
       }
     }
 
-    window.addEventListener("hashchange", loadGame);
-    loadGame();
+    async function loadGameCatalog() {
+      try {
+        const response = await fetch("games/games-list.json");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        games = (await response.json()).map((fileName) => `games/${fileName}`);
+        if (!games.length) throw new Error("The game catalog is empty");
+        window.addEventListener("hashchange", loadGame);
+        loadGame();
+      } catch (error) {
+        status.textContent = "Could not load the game catalog.";
+        content.innerHTML = "<p>Check that games/games-list.json is available.</p>";
+        console.error(error);
+      }
+    }
+
+    loadGameCatalog();
   </script>
 </body>
 </html>
