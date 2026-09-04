@@ -1,9 +1,3 @@
 # Game Summaries
 
-Open `index.html` through a web server to browse the summaries on a phone. From this folder, run:
-
-```text
-python -m http.server 8000
-```
-
-Then visit `http://<your-computer-ip>:8000/` on the phone while both devices are on the same network. The reader fetches and renders the Markdown files in the browser using `marked` and sanitizes the resulting HTML with `DOMPurify`.
+Board Game summaries available to find via the index.html file. To add a new summary, put it in `.md` Markdown format inside of the `games` subfolder. Use a similar style of starting with How to Win, Setup, what a Round and Turn look like, and Game Ending scoring.
