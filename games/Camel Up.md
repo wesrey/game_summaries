@@ -1,4 +1,4 @@
-# Camel Up
+# Camel UpDown
 ## How to Win
 Have the most money (coins) at the end of the race. No tie breaker.
 The instant one camel has crossed the finish line, conduct final scoring and see who won.
