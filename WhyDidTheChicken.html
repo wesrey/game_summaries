@@ -8,28 +8,82 @@
   <meta name="description" content="Why Did The Chicken...? Random Cardpair Generator">
   <meta name="author" content="Wesley Reynolds <wesrey.com>">
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: #ffffff;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    #card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
+
+    #card-sentence {
+      max-width: 40rem;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.4;
+      color: #000000;
+      text-align: center;
+    }
+
+    #generate-btn {
+      font-family: inherit;
+      font-size: 1rem;
+      color: #000000;
+      background: #f2f2f2;
+      border: 1px solid #000000;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1.25rem;
+      cursor: pointer;
+    }
+
+    #generate-btn:hover {
+      background: #d9d9d9;
+    }
+  </style>
 </head>
 
 <body onload="card_gen()">
 
-  <span id="card-sentence">
+  <div id="card-container">
+    <span id="card-sentence"></span>
+    <button id="generate-btn" onclick="card_gen()">Generate another</button>
+  </div>
 
   <script>
+  function pickRandom(list) {
+    return list[Math.floor(Math.random() * list.length)];
+  }
+
   function card_gen() {
-    var num_questions = 20;
-    var num_nouns = 318;
+    var rand_question = pickRandom(questions);
 
-    var rand_question = questions[Math.floor((Math.random() * num_questions))];
+    var rand_noun1 = pickRandom(nouns);
+    var rand_noun2;
+    do { // ensures the 2 nouns are different
+      rand_noun2 = pickRandom(nouns);
+    } while (rand_noun2 === rand_noun1)
 
-    var rand_noun1 = nouns[Math.floor((Math.random() * num_nouns))];
-    do { // this loop ensures the 2 nouns are different
-      var rand_noun2 = nouns[Math.floor((Math.random() * num_nouns))];
-    } while (rand_noun1 == rand_noun2)
-
-    var question = rand_question.replace("_", rand_noun1);
-    question = question.replace("_", rand_noun2);
+    var question = rand_question
+      .replace("_", "<u>" + rand_noun1 + "</u>")
+      .replace("_", "<u>" + rand_noun2 + "</u>");
 
     document.getElementById("card-sentence").innerHTML = question;
   }
@@ -55,7 +109,7 @@
     "Why did _ go to heaven while _ went to hell?",
     "Why is _ better than _?",
     "What's the old saying about _ and _?"
-      ]
+  ]
 
   var nouns = [
     "a traffic light",
@@ -376,7 +430,7 @@
     "a computer",
     "a radio",
     "a pair of underpants"
-      ]
+  ]
   </script>
 </body>
 </html>
