@@ -1,6 +1,6 @@
 # Why Did The Chicken
 
-[Play using the Random Question Generator](https://wesrey.com/game_summaries/WhyDidTheChicken.html)
+[Play using the Random Question Generator](WhyDidTheChicken.html)
 
 What makes you laugh? More important, what makes your friends laugh?
 
