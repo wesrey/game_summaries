@@ -25,3 +25,6 @@ jobs:
 
       - name: Sync site to S3
         run: aws s3 sync . "s3://${{ vars.AWS_S3_BUCKET }}/game_summaries/" --delete --exclude ".git/*" --exclude ".github/*"
+
+      - name: Invalidate CloudFront cache
+        run: aws cloudfront create-invalidation --distribution-id "${{ vars.AWS_CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/game_summaries/*"
