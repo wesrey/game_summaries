@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173f5f">
+  <meta name="theme-color" content="#323643">
   <title>Game Summaries</title>
   <style>
     :root {
-      --ink: #173f5f;
-      --muted: #5f7482;
-      --paper: #fffdf8;
-      --cream: #f3eee3;
-      --coral: #ee7651;
+      --charcoal: #323643;
+      --muted: #606470;
+      --paper: #f7f7f7;
+      --fog: #f7f7f7;
+      --sky: #93deff;
+      --azure: #1f77a8;
       --line: #d9dedb;
       font-family: Georgia, "Times New Roman", serif;
-      color: var(--ink);
-      background: var(--cream);
+      color: var(--charcoal);
+      background: var(--fog);
     }
 
     * { box-sizing: border-box; }
@@ -36,7 +37,7 @@
 
     .eyebrow {
       margin: 0 0 0.4rem;
-      color: var(--coral);
+      color: var(--azure);
       font: 700 0.75rem/1.2 system-ui, sans-serif;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -56,13 +57,13 @@
       display: block;
       padding: 0.7rem 0.8rem;
       border-left: 3px solid transparent;
-      color: var(--ink);
+      color: var(--charcoal);
       font: 600 0.98rem system-ui, sans-serif;
       text-decoration: none;
     }
 
     nav a:hover, nav a[aria-current="page"] {
-      border-left-color: var(--coral);
+      border-left-color: var(--azure);
       background: rgba(255, 253, 248, 0.7);
     }
 
@@ -82,10 +83,10 @@
     .markdown-body h3 { margin-top: 1.7rem; font-size: 1.3rem; }
     .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
     .markdown-body li + li { margin-top: 0.35rem; }
-    .markdown-body strong { color: #b45136; }
-    .markdown-body blockquote { margin-left: 0; padding-left: 1rem; border-left: 4px solid var(--coral); color: var(--muted); }
+    .markdown-body strong { color: var(--azure); }
+    .markdown-body blockquote { margin-left: 0; padding-left: 1rem; border-left: 4px solid var(--sky); color: var(--muted); }
     .markdown-body code { padding: 0.12rem 0.3rem; background: #edf0ed; font-size: 0.9em; }
-    .markdown-body a { color: #b45136; }
+    .markdown-body a { color: var(--azure); }
 
     @media (max-width: 700px) {
       .app-shell { display: block; padding: 1rem; }
@@ -93,7 +94,7 @@
       .intro { margin-bottom: 1rem; }
       nav { display: flex; gap: 0.35rem; overflow-x: auto; padding-bottom: 0.4rem; }
       nav a { flex: 0 0 auto; border: 1px solid var(--line); padding: 0.55rem 0.7rem; font-size: 0.88rem; }
-      nav a:hover, nav a[aria-current="page"] { border-color: var(--coral); }
+      nav a:hover, nav a[aria-current="page"] { border-color: var(--sky); }
       main { padding: 1.25rem; }
     }
   </style>
