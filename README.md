@@ -15,7 +15,7 @@ Use a similar style of starting with How to Win, Setup, what a Round and Turn lo
 
 ## Automatic S3 Deployment
 
-The `main` branch deploys to the `game_summaries/` prefix in S3 automatically through GitHub Actions. Configure these repository variables in **GitHub > Settings > Secrets and variables > Actions > Variables**:
+The `main` branch deploys to the `games/summaries/` prefix in S3 automatically through GitHub Actions. Configure these repository variables in **GitHub > Settings > Secrets and variables > Actions > Variables**:
 
 - `AWS_REGION`: The AWS region containing the bucket, such as `us-east-1`.
 - `AWS_S3_BUCKET`: The S3 bucket name.
