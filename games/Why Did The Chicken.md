@@ -1,6 +1,6 @@
 # Why Did The Chicken...?
 
-[Play using the Random Question Generator](WhyDidTheChicken.html)
+[Play using the Random Question Generator](../WhyDidTheChicken.html)
 
 What makes you laugh? More important, what makes your friends laugh?
 
